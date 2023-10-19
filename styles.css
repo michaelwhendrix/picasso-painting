@@ -11,9 +11,7 @@ header {
 }
 #canvas {
     display: flex;
-    flex-flow: row wrap;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     height: 500px;
     width: 900px;
@@ -25,50 +23,59 @@ header {
     justify-content:space-around;
     align-items: center;
     height: 8cm;
-    width: 12cm;
+    width: 350px;
     background-color: lightsalmon;
 }
 input {
-    width: 10cm;
+    width: 8cm;
+}
+div {
+    margin: 0px 5px;
 }
 div:nth-child(1) {
-    height: 4cm;
-    width: 5cm;
+    height: 30%;
+    width: 10%;
     background-color:rgb(255, 17, 0);
 }
 div:nth-child(2) {
-    height: 4cm;
-    width: 5cm;
+    height: 50%;
+    width: 10%;
+    border-radius: 50%;
     background-color:rgb(0, 255, 123);
 }
 div:nth-child(3) {
-    height: 4cm;
-    width: 5cm;
+    height: 10%;
+    width: 10%;
+    flex-grow: 2;
     background-color:rgb(255, 0, 21);
 }
 div:nth-child(4) {
-    height: 4cm;
-    width: 5cm;
+    height: 40%;
+    width: 10%;
     background-color:rgb(0, 255, 8);
 }
 div:nth-child(5) {
-    height: 4cm;
-    width: 5cm;
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
     background-color:rgb(255, 0, 132);
 }
 div:nth-child(6) {
-    height: 4cm;
-    width: 5cm;
+    display: flex;
+    flex-grow: 2;
+    height: 10%;
+    width: 10%;
     background-color:rgb(255, 157, 0);
 }
 div:nth-child(7) {
-    height: 4cm;
-    width: 5cm;
+    height: 60%;
+    width: 10%;
+    border-radius: 50%;
     background-color:rgb(204, 0, 255);
 }
 div:nth-child(8) {
-    height: 4cm;
-    width: 5cm;
+    height: 10%;
+    width: 10%;
     background-color:rgb(0, 255, 34);
 }
 
@@ -82,7 +89,7 @@ footer {
     }
     #canvas {
         height: 500px;
-        width: 700px;
+        width: 600px;
     }
 }
 @media screen and (max-width:480px){
