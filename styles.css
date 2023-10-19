@@ -1,9 +1,20 @@
 * {
     background-color: brown;
 }
-
-#square {
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    margin-bottom: 20px;
+    height: 20%;
+}
+#canvas {
     height: 300px;
     width: 300px;
     background-color: blue;
+}
+footer {
+    margin-top: 1cm;
+    height: 20%;
 }
