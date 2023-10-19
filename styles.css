@@ -127,4 +127,14 @@ footer {
         height: 200px;
         width: 300px;
     }
+    #triangle-down {
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 60px solid red;
+        left: 1px;
+        top: 20px;
+    }
+    #triangle-up {
+        right: 45px;
+    }
 }
