@@ -24,8 +24,21 @@ footer {
     justify-content: space-between;
     height: 6cm;
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:1024px){
+    body {
+        background-color:cornflowerblue;
+    }
+    #canvas {
+        height: 500px;
+        width: 700px;
+    }
+}
+@media screen and (max-width:480px){
     body {
         background-color: coral;
+    }
+    #canvas {
+        height: 200px;
+        width: 300px;
     }
 }
