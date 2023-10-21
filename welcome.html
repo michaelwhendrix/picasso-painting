@@ -5,8 +5,13 @@
     </head>
     <body>
         <h1>Welcome</h1>
+        <p id="display-name"></p>
         <h3>Thanks for signing up</h3>
         <a href="./index.html">BACK</a>
     </body>
-    
+    <script>
+        let firstName =window.location.href.split("?")[1].split("&")[0].split("=")[1];
+        console.log(firstName);
+        document.getElementById("display-name").innerHTML = firstName;
+    </script>   
 </html>
