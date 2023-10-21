@@ -23,7 +23,7 @@
         </div>
     </main>
     <footer>
-        <form action="./welcome.html">
+        <form  id="input-form" method="get">
             <div id="input-style">
             <label for="fname">First Name</label>
             <input type="text" name="fname"/>
@@ -33,8 +33,13 @@
             <input type="email" name="email"/>
             </div>
             <br/>
-            <input type="submit" value="Sign Up" style="height: 1cm; width: 5cm; margin: 25%;"/>
+            <input id="form-data" type="submit" value="Sign Up" style="height: 1cm; width: 5cm; margin: 25%;"/>
         </form>
     </footer>
 </body>
+<script>
+    let firstName =window.location.href.split("?")[1].split("&")[0].split("=")[1];
+    console.log(firstName);
+</script>
+
 </html>
